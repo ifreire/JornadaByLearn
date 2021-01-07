@@ -26,7 +26,7 @@ def somar():
     num2 = int(input('Segundo número: '))
     print(f'O resultado da soma de {num1} e {num2} é {soma(num1, num2)}.')
 
-def imc():
+def calcular_imc():
     peso = int(input('Peso em kg: '))
     altura = float(input('Altura em metros: '))
     print(f'O IMC é {round(peso / quadrado(altura), 2)}.')
@@ -34,7 +34,7 @@ def imc():
 if opcao == 1:
     somar()
 elif opcao == 2:
-    imc()
+    calcular_imc()
 else:
     print('Opção inválida')
 
