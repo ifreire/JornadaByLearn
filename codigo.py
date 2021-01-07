@@ -1,3 +1,10 @@
+'''
+author: Iuri Freire
+e-mail: iuricostafreire at gmail dot com
+local date : 2021-01-06
+local time : 10:25
+'''
+
 print('''
 Selecione uma opção do menu:
 
