@@ -15,15 +15,27 @@ Menu:
 
 opcao = int(input('Opção: '))
 
+def soma(x, y):
+    return x + y
+
+def quadrado(x):
+    return x ** 2
+
+def somar():
+    num1 = int(input('Primeiro número: '))
+    num2 = int(input('Segundo número: '))
+    print(f'O resultado da soma de {num1} e {num2} é {soma(num1, num2)}.')
+
+def imc():
+    peso = int(input('Peso em kg: '))
+    altura = float(input('Altura em metros: '))
+    print(f'O IMC é {round(peso / quadrado(altura), 2)}.')
+
 if opcao == 1:
-	num1 = int(input('Primeiro número: '))
-	num2 = int(input('Segundo número: '))
-	print(f'O resultado da soma de {num1} e {num2} é {num1 + num2}.')
+    somar()
 elif opcao == 2:
-	peso = int(input('Peso em kg: '))
-	altura = float(input('Altura em metros: '))
-	print(f'O IMC é {round(peso / altura ** 2, 2)}.')
+    imc()
 else:
-	print('Opção inválida')
+    print('Opção inválida')
 
 print('')
